@@ -1,10 +1,3 @@
 # Portfolio-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arthur Lee | Développeur Web</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-
-
+#Voici le lien vers mon Portfolio 
+[Voir le site](https://Arth75.github.io/Portfolio/)
