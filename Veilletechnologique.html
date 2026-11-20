@@ -1,192 +1,123 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets – Épreuve E5</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <title>Portfolio : Arthur Lee</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <style>
- body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+#veille {
+    padding: 40px;
     background: #f2e8df;
-    color: Black;
-}
-
-header {
-    text-align: center;
-    padding: 30px;
-    background: #f2e8df;
-    color: DarkTurquoise;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.2em;
-}
-
-.bloc {
-    background: white;
-    margin: 30px auto;
-    padding: 25px;
+    border-radius: 10px;
     max-width: 900px;
-    border-radius: 8px;
+    margin: 50px auto;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
 }
 
-.bloc h2 {
-    color: Black;
-    margin-bottom: 15px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-.competences li {
-    margin: 8px 0;
-}
-
-.table-container {
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-th, td {
-    padding: 12px;
-    border: 1px solid #ddd;
-}
-
-th {
-    background: #2b4c7e;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background: #f2e8df;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #f2e8df;
+#veille h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
     color: DarkTurquoise;
-    margin-top: 40px;
-} 
+    text-align: center;
+}
+
+#veille h3 {
+    margin-top: 30px;
+    color: DarkTurquoise;
+}
+
+#veille p, #veille li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(33% - 20px);
+    min-width: 240px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    color: DarkTurquoise;
+    margin-bottom: 10px;
+}
+
+.sources {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
 </style>
-<header>
-    <h1>Projets – Épreuve E5/Personnels</h1>
-    <p>Document de synthèse – Portfolio et compétences évaluées</p>
-</header>
+<section id="veille">
+    <h2> Veille Technologique</h2>
 
-<section class="bloc">
-    <h2> Informations sur l’épreuve E5</h2>
-    <p>
-        L’épreuve E5 du BTS SIO (Services Informatiques aux Organisations) évalue ls
-        <strong>compétences professionnelles ascquises tout au long de l'année</strong>.
-        Elle concerne les options <strong>SISR</strong> et <strong>SLAM</strong>.
-    </p>
-
-    <ul>
-        <li>➡ Coefficient : <strong>5</strong></li>
-        <li>➡ Forme : Épreuve orale pratique</li>
-        <li>➡ Présentation du portfolio personnel</li>
-        <li>➡ Évaluation des compétences professionnelles du référentiel</li>
-    </ul>
-</section>
-
-<section class="bloc">
-    <h2> Compétences évaluées</h2>
-
-    <ul class="competences">
-        <li>1-Installation et intégration d'équipements et services informatiques</li>
-        <li>2)Administration, supervision et maintenance des systèmes et réseaux</li>
-        <li>3)Gestion du patrimoine informatique</li>
-        <li>4)Résolution d’incidents et support utilisateur</li>
-        <li>5)Maintien de la qualité de service</li>
-        <li>6)Sécurisation des infrastructures et applications</li>
-        <li>7)Spécification technique (option SLAM)</li>
-        <li>8)Documentation technique</li>
-        <li>9)Développement professionnel</li>
-    </ul>
-</section>
-
-<section class="bloc">
-    <h2> Tableau de synthèse des compétences</h2>
-
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Compétence</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>Installation & intégration</td>
-                    <td>Installer et configurer serveurs, postes, équipements et interconnexions.</td>
-                </tr>
-
-                <tr>
-                    <td>Administration & supervision</td>
-                    <td>Exploiter, superviser et maintenir les services systèmes/réseaux.</td>
-                </tr>
-
-                <tr>
-                    <td>Hébergement</td>
-                    <td>Choisir et mettre en place des solutions d’hébergement adaptées.</td>
-                </tr>
-
-                <tr>
-                    <td>Support utilisateur</td>
-                    <td>Résoudre les incidents, assister et accompagner les utilisateurs.</td>
-                </tr>
-
-                <tr>
-                    <td>Sécurité</td>
-                    <td>Mettre en œuvre des mesures de sécurisation des systèmes ou applications.</td>
-                </tr>
-
-                <tr>
-                    <td>Documentation</td>
-                    <td>Rédiger la documentation technique : infra (SISR) ou applicative (SLAM).</td>
-                </tr>
-
-                <tr>
-                    <td>Développement professionnel</td>
-                    <td>Organiser et planifier l’évolution de ses compétences.</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="intro">
+        <p>
+            La veille technologique est l’activité qui consiste à se tenir informé des innovations et évolutions dans le domaine informatique
+            afin d’améliorer ses compétences et d’adapter ses projets aux nouvelles technologies.
+            Ma veille technologique a pour objectif de suivre les évolutions en 
+            intelligence artificielle, cybersécurité et développement web 
+            afin d'améliorer mes projets et de rester à jour sur les technologies émergentes.
+        </p>
     </div>
+
+    <div class="bloc">
+        <h3>Derniers Résultats de Veille</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>Evolution dans l'IA</h4>
+                <p>le 30 Octobre 2025 / Intelligence artificielle
+                  Nvidia pousse l'IA dans les futurs réseaux 6G
+                  Le fournisseur s'est associé avec plusieurs sociétés comme Booz Allen, Cisco, Mitre, ODC et T-Mobile
+                  pour intégrer de l'IA dans la gestion des futurs réseaux mobiles actuels (5G)</p>
+            </div>
+            <div class="card">
+                <h4>Cybersécurité</h4>
+                <p>IA générative : Protégé, le nouvel assistant juridique au coeur des outils métiers développé par l'éditeur LexisNexis
+                  Un an après le lancement de la première version de son assistant juridique dopé à l'IA générative, LexisNexis annonce la disponibilité de "Protégé",
+                  un nouvel outil davantage personnalisé et intégré aux outils métiers des professionnels du droit et du chiffre. 23 Novembre 2025</p>
+            </div>
+            <div class="card">
+                <h4>Développement Web</h4>
+                <p>Les technologies back-end émergentes telles que GraphQL, Serverless Computing et Docker
+                  sont en train de changer la façon dont les développeurs web créent et gèrent les applications web. GraphQL est une technologie
+                  qui permet de récupérer les données dont on a besoin de manière efficace et flexible.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bloc">
+        <h3>Impact sur Mes Projets</h3>
+        <ul>
+            <li>✔ Mise en place des compétences de développement acquise avec HTML et CSS</li>
+            <li>✔ Aide des nouvelles IA pour mes différents projets </li>
+        </ul>
+    </div>
+
+    <div class="sources">
+        <h3>Sources</h3>
+        <p>My digitalschool — usine-digital.fr — YouTube </p>
+    </div>
+
 </section>
-<section class="bloc">
-    <h2> Création d'un site internet pour une entreprise du Btp</h2>
-    <p>
-        J'ai pu créer un site internet sur GitHub avec l'aide d'un camarade de classe
-        <strong>en 2024/2025 </strong>.
-    </p>
-
-    <ul>
-        <li>Acquisition de nouvelles compétences dans la programmation (HTML/CSS)</li>
-        <li>Etude des différentes formes de sites internets</li>
-        <li>Présentation du site à l'entreprise existante</li>
-    </ul>
-</section>
-
-<footer>
-    <p> 2025 – BTS SIO | Document de Synthèse E5</p>
-</footer>
-
 </body>
 </html>
